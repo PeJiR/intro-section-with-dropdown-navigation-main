@@ -21,12 +21,14 @@
       <nav>
         <div class="back">
           <div class="front">
-            <img id="close-btn" src="./images/icon-close-menu.svg" alt="close" />
+            <div class="img-close">
+              <img id="close-btn" src="./images/icon-close-menu.svg" alt="close" />
+            </div>
             <ul>
               <li>
-                <button>Features</button>
-                <img src="./images/icon-arrow-down.svg" alt="arrowdown" />
-                <ul>
+                <button class="sub-menu">Features <img src="./images/icon-arrow-down.svg" alt="arrowdown" /></button>
+                
+                <ul class="features-ul">
                   <li>
                     <img src="./images/icon-todo.svg" alt="todo" />
                     <span>Todo List</span>
@@ -46,9 +48,9 @@
                 </ul>
               </li>
               <li>
-                <button>Company</button>
-                <img src="./images/icon-arrow-down.svg" alt="arrowdown" />
-                <ul>
+                <button class="sub-menu">Company<img src="./images/icon-arrow-down.svg" alt="arrowdown" /></button>
+                
+                <ul class="company-ul">
                   <li>History</li>
                   <li>Our Team</li>
                   <li>Blog</li>
@@ -57,8 +59,8 @@
               <li>Careers</li>          
               <li>About</li>          
             </ul>
-            <button>Login</button>
-            <button>Register</button>
+            <button class="login-btn">Login</button>
+            <button class="register-btn">Register</button>
           </div>
         </div>     
       </nav>
