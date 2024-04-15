@@ -7,7 +7,6 @@
 }
 
 * {
-  
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -21,94 +20,91 @@ body {
 }
 
 header {
-  
   display: flex;
-  align-items: center;  
+  align-items: center;
   justify-content: space-between;
   margin: 16px 16px 24px;
-  & .menu{
+  & .menu {
     display: none;
   }
-  & nav {   
-    /* display: none; */
-   }
+  & nav {
+    display: none;
+  }
 
-   & .back{
+  & .back {
     background-color: black;
     /* opacity: 0.4; */
     position: absolute;
     left: 0px;
-    top:0;
+    top: 0;
     width: 100%;
     height: 780px;
-   }
-   & .front{
+  }
+  & .front {
     background-color: var(--pale-white);
     position: absolute;
     right: 0;
     width: 240px;
     height: 780px;
     padding: 20px;
-    & .img-close{
-      display: flex;       
+    & .img-close {
+      display: flex;
       justify-content: flex-end;
-      cursor:pointer;
-           
-    }
-    & li{
-      list-style: none;
-      margin: 18px 0;
       cursor: pointer;
     }
-    &  .features-ul,.company-ul{
-      
-      margin-left:28px;
-      display:;
+    & li {
+      list-style: none;
+      margin: 24px 0;
+      cursor: pointer;
     }
-    & .sub-menu{
+    & .features-ul,
+    .company-ul {
+      margin-left: 28px;
+      display: none;
       
+    }
+    & .sub-menu {
       border-radius: 100px;
-      display:flex;
+      display: flex;
       justify-content: space-between;
       align-items: center;
-      margin:24px 0;
+      margin: 24px 0;
       width: 50vw;
       height: 26px;
-
     }
-
-
-   }
+  }
 }
-
 
 button {
   background-color: var(--pale-white);
-  border:none;
+  border: none;
   font-size: 1em;
   cursor: pointer;
-   
-   
+  
+}
+.btn-container {
+
+  position: absolute;
+  bottom: 124px;
+
 }
 
-.login-btn{
+.login-btn {
   margin: 0 auto 16px;
   display: block;
+  width: 90px;
   cursor: pointer;
-  color: #0a0a23; 
+  color: #0a0a23;
   background-image: linear-gradient(var(--pale-white), var(--blue));
-  
-   
+
   border-radius: 9px;
   padding: 5px;
   font-size: 1em;
-   
 }
 
-
-.register-btn{ 
-   
+.register-btn {
   margin: 0 auto;
+  width: 180px;
   cursor: pointer;
   display: block;
   color: #0a0a23;
@@ -118,7 +114,29 @@ button {
   border-radius: 9px;
   padding: 5px;
   font-size: 1em;
-   
+}
+
+main{
+  
+  display: flex;
+  flex-direction: column-reverse;   
+}
+& .hero-image{
+  width: 100%;
+  margin-bottom: 48px;
+}
+& h2{
+  font-size: 2em;
+  text-align: center;
+  margin-bottom:10px;
+  font-weight: bold;
+}
+& p{
+  text-align: center;
+  margin: 0 20px;
+  line-height: 1.5em;
+  color:grey;
+  font-size: 0.9em;
 }
 
 
