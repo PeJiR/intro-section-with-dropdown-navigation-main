@@ -27,6 +27,11 @@ header {
   & .menu {
     display: none;
   }
+  & .logo {
+    width: 25vh;
+    height: inherit;
+     
+  }
   & nav {
     display: none;
   }
@@ -61,7 +66,6 @@ header {
     .company-ul {
       margin-left: 28px;
       display: none;
-      
     }
     & .sub-menu {
       border-radius: 100px;
@@ -80,13 +84,10 @@ button {
   border: none;
   font-size: 1em;
   cursor: pointer;
-  
 }
 .btn-container {
-
   position: absolute;
   bottom: 124px;
-
 }
 
 .login-btn {
@@ -116,27 +117,72 @@ button {
   font-size: 1em;
 }
 
-main{
-  
+main {
   display: flex;
-  flex-direction: column-reverse;   
+  flex-direction: column-reverse;
+  & .hero-image {
+    width: 100%;
+    margin-bottom: 48px;
+  }
+  & h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  & p {
+    text-align: center;
+    margin: 0 20px 24px;
+    line-height: 1.5em;
+    color: grey;
+    font-size: 0.9em;
+  }
+  & button {
+    background-color: #0a0a23;
+    color: var(--pale-white);
+    border-radius: 15%;
+    border: 3px solid var(--purple);
+    height: 48px;
+    font-size: 1em;
+    margin-bottom: 40px;
+    display: block;
+    margin:30px auto ;
+    font-weight: bold;
+    padding: 5px;
+    &:hover {
+      background-color: var(--purple);
+      color: #000;
+      border-color: var(--blue);
+    }
+  }
+  
+  &.logo {
+    border: 1px solid red;
+    margin:  auto ;
+    display: flex;    
+    align-items:center;
+    justify-content: space-between;
+    padding: 10px 16px;
+    position: relative;
+     
+  }
+  & .databiz {
+     width: 80px;
+  }
+  & .audiophile {
+    width: 50px;
+  }
+  & .meet {
+    width: 64px;
+  }
+  & .maker {
+    width: 64px;
+  }
+     
+  & .SWS-image {
+    width: 60vh;
+    height: inherit;
+    margin-top: 20px;
+    
+  }
 }
-& .hero-image{
-  width: 100%;
-  margin-bottom: 48px;
-}
-& h2{
-  font-size: 2em;
-  text-align: center;
-  margin-bottom:10px;
-  font-weight: bold;
-}
-& p{
-  text-align: center;
-  margin: 0 20px;
-  line-height: 1.5em;
-  color:grey;
-  font-size: 0.9em;
-}
-
-
