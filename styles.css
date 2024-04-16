@@ -31,7 +31,6 @@ header {
   & .logo {
     width: 25vh;
     height: inherit;
-     
   }
   & nav {
     display: none;
@@ -47,7 +46,7 @@ header {
     height: 780px;
   }
   & .front {
-    top:0;
+    top: 0;
     background-color: var(--pale-white);
     position: absolute;
     right: 0;
@@ -91,8 +90,6 @@ button {
   position: absolute;
   bottom: 124px;
   margin: 0 auto;
-   
-  
 }
 
 .login-btn {
@@ -151,7 +148,7 @@ main {
     font-size: 1em;
     margin-bottom: 40px;
     display: block;
-    margin:30px auto ;
+    margin: 30px auto;
     font-weight: bold;
     padding: 5px;
     &:hover {
@@ -160,19 +157,18 @@ main {
       border-color: var(--blue);
     }
   }
-  
+
   &.logo {
     border: 1px solid red;
-    margin:  auto ;
-    display: flex;    
-    align-items:center;
+    margin: auto;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 10px 16px;
     position: relative;
-     
   }
   & .databiz {
-     width: 80px;
+    width: 80px;
   }
   & .audiophile {
     width: 50px;
@@ -183,11 +179,16 @@ main {
   & .maker {
     width: 64px;
   }
-     
+
   & .SWS-image {
     width: 60vh;
     height: inherit;
     margin-top: 20px;
-    
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+      display: flex;
   }
 }
