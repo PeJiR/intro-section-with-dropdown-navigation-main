@@ -160,12 +160,11 @@ main {
 
   &.logo {
     border: 1px solid red;
-    margin: auto;
-    display: flex;
+   display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 16px;
-    position: relative;
+    
   }
   & .databiz {
     width: 80px;
@@ -197,7 +196,7 @@ main {
       display: block;
       border: 1px solid red;
       width: 100%;
-      height: 30px;
+      height: 100px;
       align-items: center;    
       & .back{
         display: none;
@@ -205,10 +204,12 @@ main {
       & .front{
         position: static;
         width: 100%;
+        height: 100%;
         border: 1px solid blue;
         display: flex;
-        height: 100%;
-        margin-bottom:30px;
+        justify-content: space-between;
+        padding:0;         
+      
       }
       & .img-close{
         display: none;
@@ -217,15 +218,21 @@ main {
         display: flex;
         border: 1px solid green;
       }
-      & .btn-container{
+      & .login-container{     
         display: flex;
         border: 1px solid yellow;
         position:static;
+        width: 180px;
+        
       }
 
   }
+
   main {
     flex-direction: row;
-    margin: top 150px;
+    margin-top: 150px;
+     
   }
+ 
 }
+ 
