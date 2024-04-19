@@ -207,6 +207,14 @@ main {
       & ul {
         display: flex;
         border: 1px solid green;
+        height: 30px;
+      }
+      & .btn-container {
+        display: flex;
+        position: static;
+        border: 1px solid orange;
+        width: 180px;
+        margin-bottom: 30px;
       }
       & .login-container {
         display: flex;
@@ -214,10 +222,10 @@ main {
         position: static;
         width: 180px;
       }
-      main {
-        flex-direction: row;
-        margin-top: 150px;
-      }
     }
+  }
+  main {
+    flex-direction: row;
+    margin-top: 100px;
   }
 }
