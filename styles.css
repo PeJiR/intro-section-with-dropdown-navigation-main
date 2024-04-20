@@ -180,8 +180,7 @@ main .logos-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
-  padding: 10px 16px;
+  position: relative;   
   width: 100%;
 }
 
