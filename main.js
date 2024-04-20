@@ -1,18 +1,50 @@
 const menuBtn = document.getElementById("menu-btn");
-const navbar = document.getElementById("navbar");
+const navBar = document.getElementById("navbar");
 const closeBtn = document.getElementById("close-btn");
 const featuresBtn = document.getElementById("features-btn");
-const featuresUl= document.querySelector(".features-ul");
+const featuresUl = document.querySelector(".features-ul");
 const companyBtn = document.getElementById("company-btn");
 const companyUl = document.querySelector(".company-ul");
+const featuresBtnArrow = document.getElementById("features-btn-arrow");
+const companyBtnArrow = document.getElementById("company-btn-arrow");
 
+menuBtn.addEventListener("click", () => {
+  navBar.style.display = "block";
+});
 
-menuBtn.onclick = () =>
-  (navbar.style.display = navbar.style.display == "none" ? "block" : "none");
-closeBtn.onclick = () => (navbar.style.display = "none");
+closeBtn.addEventListener("click", () => {
+  const screenSize = window.innerWidth;
+  if (screenSize >= 768) {
+    navBar.style.display = "block";
+  } else {
+    navBar.style.display = "none";
+  }
+});
+// Event listener for window resize to handle navbar visibility on screen size change
+window.addEventListener("resize", () => {
+  const screenSize = window.innerWidth;
+  if (screenSize >= 768) {
+    navBar.style.display = "block"; // Ensure navbar is visible on large screens
+  }
+});
 
-featuresBtn.onclick = () =>
-  (featuresUl.style.display = featuresUl.style.display == "none" ? "block" : "none");
+featuresBtn.addEventListener("click", () => {
+  featuresUl.style.display =
+    featuresUl.style.display === "block" ? "none" : "block";
 
-companyBtn.onclick=()=>
-(companyUl.style.display = companyUl.style.display == "none" ? "block" : "none");
+  featuresBtnArrow.style.transform =
+    featuresBtnArrow.style.transform === "rotate(-90deg)"
+      ? "rotate(0deg)"
+      : "rotate(-90deg)";
+  featuresBtnArrow.style.transition = "transform 0.3s ease-in-out";
+});
+
+companyBtn.addEventListener("click", () => {
+  companyUl.style.display =
+    companyUl.style.display === "block" ? "none" : "block";
+  companyBtnArrow.style.transform =
+    companyBtnArrow.style.transform === "rotate(-90deg)"
+      ? "rotate(0deg)"
+      : "rotate(-90deg)";
+  companyBtnArrow.style.transition = "transform 0.3s ease-in-out";
+});
