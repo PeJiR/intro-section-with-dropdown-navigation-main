@@ -27,7 +27,7 @@
   </a>
 </p>
 ---> 
-## Project description: 
+## 🏗️  Project description: 
 
 The challenge is to build out this intro section with dropdown navigation and get it looking as close to the design as possible.
 
@@ -38,7 +38,7 @@ The users should be able to:
 - See hover states for all interactive elements on the page
 
 
-## Technology Used ✨
+## 🤖 Technology Used 
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![debian](https://img.shields.io/badge/debian-red?style=for-the-badge&logo=debian&logoColor=red&color=grey)
 ![git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
@@ -52,7 +52,7 @@ The users should be able to:
 
 
 
-## Preview
+## ✨ Preview
 <p align="center">
   <a href="https://pejir.github.io/intro-section-with-dropdown-navigation-main/">
     <img src="./screenshots/photo4.png" width="500" height="400">
@@ -62,10 +62,7 @@ The users should be able to:
   </a>
 </p>
 
-##  See project online 
-
-[Link to project](https://pejir.github.io/intro-section-with-dropdown-navigation-main/) ✨
-
+🚀 [See project online](https://pejir.github.io/intro-section-with-dropdown-navigation-main/)
 
 
  
