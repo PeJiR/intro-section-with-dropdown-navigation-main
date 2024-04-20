@@ -56,11 +56,11 @@ Your users should be able to:
 
 ## Preview
 
-<a href="https://pejir.github.io/Social-media-dashboard-with-theme-switcher/">
-  <img src="./screenshots/photo4.png" width="250">
-  <img src="./screenshots/photo1.png" width="250">
-  <img src="./screenshots/photo2.png" width="250">
-  <img src="./screenshots/photo3.png" width="250">
+<a href="https://pejir.github.io/intro-section-with-dropdown-navigation-main/">
+  <img src="./screenshots/photo4.png" width="500" height="400">
+  <img src="./screenshots/photo2.png" width="500" height="400">
+  <img src="./screenshots/photo1.png" width="500" height="400">
+  <img src="./screenshots/photo3.png" width="500" height="400">
   
 </a>
 
