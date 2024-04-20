@@ -17,7 +17,7 @@ body {
   background-color: var(--pale-white);
   color: black;
   font-size: 1.25em;
-  margin:0 auto;
+  margin: 0 auto;
   align-items: center;
   max-width: 1440px;
 }
@@ -28,169 +28,301 @@ header {
   justify-content: space-between;
   max-width: 1440px;
   margin: 16px 16px 24px;
-  & .menu-btn {
-    /* display: none; */
-    cursor: pointer;
-  }
-  & button {
-    background-color: var(--pale-white);
-    border: none;
-    font-size: 1em;
-    cursor: pointer;
-  }
-  & .logo {
-    width: 15vh;
-    height: inherit;
-  }
-  & nav {
-    display: none;
-    & .back {
-      background-color: grey;
-      opacity: 0.7;
-      position: absolute;
-      left: 0px;
-      top: 0;
-      width: 100%;
-      height: 780px;
-    }
-    & .front {
-      top: 0;
-      background-color: var(--pale-white);
-      position: absolute;
-      right: 0;
-      width: 240px;
-      height: 780px;
-      padding: 20px;
-    }
-    & .img-close {
-      text-align: right;
-      cursor: pointer;
-    }
-    & ul {
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 10px;
-    }
-    & li {
-      list-style: none;
+}
 
-      cursor: pointer;
-      margin-bottom: 26px;
-    }
-    & .features-ul,
-    .company-ul {
-      display: none;
-    }
-    & .sub-menu {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin: 24px 0;
-      width: 110vw;
-      height: 26px;
-    }
-    .btn-container {
-      position: absolute;
-      bottom: 104px;
-      margin: 0 ;
-    }
+header .menu-btn {
+  cursor: pointer;
+}
 
-    .login-btn {
-      display: block;
-      margin: 0 auto;
-      cursor: pointer;
-      color: #0a0a23;
-      background-image: linear-gradient(var(--pale-white), var(--blue));
-      border-radius: 9px;
-      padding: 5px;
-      font-size: 1em;
-    }
+header button {
+  background-color: var(--pale-white);
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+}
 
-    .register-btn {
-      height: 42px;
-      width: 180px;
-      cursor: pointer;
-      color: #0a0a23;
-      background-color: var(--purple);
-      background-image: linear-gradient(var(--blue), var(--purple));
-      border: 3px solid var(--purple);
-      border-radius: 9px;
-      font-size: 1em;
-    }
-  }
+header .logo {
+  width: 15vh;
+  height: inherit;
+}
+
+header nav {
+  display: none;
+}
+
+header nav .back {
+  background-color: grey;
+  opacity: 0.7;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  width: 100%;
+  height: 780px;
+}
+
+header nav .front {
+  top: 0;
+  background-color: var(--pale-white);
+  position: absolute;
+  right: 0;
+  width: 240px;
+  height: 780px;
+  padding: 20px;
+}
+
+header nav .img-close {
+  text-align: right;
+  cursor: pointer;
+}
+
+header nav ul {
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+header nav li {
+  list-style: none;
+  cursor: pointer;
+  margin-bottom: 26px;
+}
+
+header nav .features-ul,
+header nav .company-ul {
+  display: none;
+}
+
+header nav .sub-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px 0;
+  width: 110vw;
+  height: 26px;
+}
+
+header nav .btn-container {
+  position: absolute;
+  bottom: 104px;
+  margin: 0;
+}
+
+header nav .login-btn {
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  color: #0a0a23;
+  background-image: linear-gradient(var(--pale-white), var(--blue));
+  border-radius: 9px;
+  padding: 5px;
+  font-size: 1em;
+}
+
+header nav .register-btn {
+  height: 42px;
+  width: 180px;
+  cursor: pointer;
+  color: #0a0a23;
+  background-color: var(--purple);
+  background-image: linear-gradient(var(--blue), var(--purple));
+  border: 3px solid var(--purple);
+  border-radius: 9px;
+  font-size: 1em;
 }
 
 main {
   display: flex;
   flex-direction: column-reverse;
   max-width: 1440px;
-  & .hero-image {
-    width: 100%;
-    margin-bottom: 48px;
-    
+}
+
+main .hero-image {
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+main h2 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+main p {
+  text-align: center;
+  margin: 0 20px 24px;
+  line-height: 1.5em;
+  color: grey;
+  font-size: 0.9em;
+}
+
+main button {
+  background-color: #0a0a23;
+  color: var(--pale-white);
+  border-radius: 15%;
+  border: 3px solid var(--purple);
+  height: 48px;
+  font-size: 1em;
+  margin-bottom: 40px;
+  display: block;
+  margin: 30px auto;
+  font-weight: bold;
+  padding: 5px;
+}
+
+main button:hover {
+  background-color: var(--purple);
+  color: #000;
+  border-color: var(--blue);
+}
+
+main .logos-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px 16px;
+  width: 100%;
+}
+
+main .databiz {
+  width: 20%;
+  max-width: 80px;
+}
+
+main .audiophile {
+  width: 13%;
+  max-width: 50px;
+}
+
+main .meet {
+  width: 16%;
+  max-width: 64px;
+}
+
+main .maker {
+  width: 16%;
+  max-width: 64px;
+}
+
+main .SWS-container {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px 16px;
+  width: 100%;
+  height: 10px;
+}
+
+main .SWS-image {
+  width: 100%;
+  max-width: 200px;
+}
+
+@media (min-width: 768px) {
+  header .menu-btn {
+    display: none;
   }
-  & h2 {
-    font-size: 2em;
-    text-align: center;
-    margin-bottom: 10px;
-    font-weight: bold;
-  }
-  & p {
-    text-align: center;
-    margin: 0 20px 24px;
-    line-height: 1.5em;
-    color: grey;
-    font-size: 0.9em;
-  }
-  & button {
-    background-color: #0a0a23;
-    color: var(--pale-white);
-    border-radius: 15%;
-    border: 3px solid var(--purple);
-    height: 48px;
-    font-size: 1em;
-    margin-bottom: 40px;
-    display: block;
-    margin: 30px auto;
-    font-weight: bold;
-    padding: 5px;
-    &:hover {
-      background-color: var(--purple);
-      color: #000;
-      border-color: var(--blue);
-    }
-  }
-  & .logos-container {
+
+  header nav {
     display: flex;
-    align-items: center;
+    padding-left: 10px;
+    width: 1000px;
+  }
+
+  header nav .back {
+    display: none;
+  }
+
+  header nav .front {
+    position: static;
+    height: 100%;
+    display: flex;
     justify-content: space-between;
-    position: relative;
-    padding: 10px 16px;
+    padding: 0;
+  }
+
+  header nav .img-close {
+    display: none;
+  }
+
+  header nav ul {
+    align-items: center;
+    width: 400px;
+    justify-content: space-between;
+    display: flex;
+    font-size: 1.25rem;
+  }
+
+  header nav li {
+    margin: 0;
+    padding-left: 10px;
+  }
+
+  header nav li .sub-menu {
     width: 100%;
+    margin: 0;
+    padding: 2px;
   }
 
-  & .databiz {
-    width: 20%; /* Adjust this percentage as needed */
-    max-width: 80px; /* Set a max-width to prevent images from growing too large */
+  header nav .features-ul,
+  header nav .company-ul {
+    width: auto;
+    position: absolute;
+    background-color: var(--purple);
+    background-image: linear-gradient(var(--blue), var(--purple));
+    border: 3px solid var(--purple);
+    box-shadow: 2px 10px 40px #a87ffb;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 auto;
   }
 
-  & .audiophile {
-    width: 13%; /* Adjust this percentage as needed */
-    max-width: 50px; /* Set a max-width to prevent images from growing too large */
+   
+  header nav .btn-container {
+    display: flex;
+    position: absolute;
+    height: 40px;
+    align-items: center;
+    top: 15px;
+    right: 0px;
   }
 
-  & .meet {
-    width: 16%; /* Adjust this percentage as needed */
-    max-width: 64px; /* Set a max-width to prevent images from growing too large */
+  header nav .login-btn,
+  header nav .register-btn {
+    border: 2px solid black;
+    width: auto;
+    display: block;
+    margin-left: 10px;
+    padding: 8px;
   }
 
-  & .maker {
-    width: 16%; /* Adjust this percentage as needed */
-    max-width: 64px; /* Set a max-width to prevent images from growing too large */
+  main h2 {
+    font-size: 3em;
   }
-  & .SWS-container {
-    margin-top: 6px;
-    margin-bottom: 6px;
+
+  main p {
+    width: 600px;
+    font-size: 1.2em;
+    margin: 40px auto;
+  }
+
+  main button {
+    width: 150px;
+    height: 50px;
+    font-size: 1.2em;
+    margin-bottom: 50px;
+  }
+
+  main picture {
+    width: 80%;
+    margin: 24px auto;
+  }
+
+  main .SWS-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -200,127 +332,9 @@ main {
     height: 10px;
   }
 
-  & .SWS-image {
-    width: 100%; /* Adjust this percentage as needed */
-    max-width: 200px; /* Set a max-width to prevent images from growing too large */
-    /* Maintain aspect ratio */
-  }
-}
-
-@media (min-width: 768px) {
-  header {
-    
-    & .menu-btn {
-      display: none;
-    }
-    & nav {
-      display: flex;
-      padding-left: 10px;       
-      width: 1000px;    
-       
-      & .back {
-        display: none;
-      }
-      & .front {
-        position: static;
-               
-        height: 100%;
-        display: flex;
-        justify-content: space-between;
-        padding: 0;
-      }
-      & .img-close {
-        display: none;
-      }
-      & ul {
-        align-items: center;
-        width: 400px;
-        justify-content: space-between;
-        display: flex;
-        font-size: 1.25rem;
-      }
-      & li {
-        margin: 0;
-        padding-left: 10px;
-        & .sub-menu {
-          width: 100%;
-          margin: 0;
-          padding: 2px;
-        }
-      }
-      & .features-ul,
-      .company-ul {
-        
-        width:auto;   
-        
-        position: absolute;        
-        background-color: var(--purple);
-        background-image: linear-gradient(var(--blue), var(--purple));
-        border: 3px solid var(--purple);
-        box-shadow: 2px 10px 40px #a87ffb;
-        border-radius: 10px;
-        padding: 10px;
-        margin: 0 auto;  
-                                 
-      }  
-      & #features-btn,#company-btn {
-        border: 1px solid red;
-        width: 100px;
-         
-      }         
-
-      & .btn-container {
-         
-        display: flex;
-        position: absolute;  
-        height: 40px;
-        align-items: center;
-        top: 15px;
-        right: 0px;
-      }
-      .login-btn,.register-btn {
-        border: 2px solid black;
-        width: auto;
-        display: block;
-        margin-left: 10px; 
-        padding: 8px;/* Add margin between buttons */
-}
-    }
-  }
-  main {
-    & h2 {
-      font-size: 3em;
-    }
-    & p {
-      width: 600px;
-      font-size: 1.2em;
-      margin: 40px auto;
-    }
-    & button {
-      width: 150px;
-      height: 50px;
-      font-size: 1.2em;
-      margin-bottom: 50px;
-    }
-    & picture {
-      width: 80%;
-      margin: 24px auto;
-    }
-    & .SWS-container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      position: relative;
-      padding: 10px 16px;
-      width: 100%;
-      height: 10px;
-    }
-
-    & .SWS-image {
-      width: 100%; /* Adjust this percentage as needed */
-      max-width: 200px; /* Set a max-width to prevent images from growing too large */
-      /* Maintain aspect ratio */
-    }
+  main .SWS-image {
+    width: 100%;
+    max-width: 200px;
   }
 }
 
@@ -329,54 +343,59 @@ main {
     max-width: 1440px;
      
     margin: 21px 80px 60px;
-   
-    & nav {
-      margin-left: 30px;
-    }
-    
   }
+
+  header nav {
+    margin-left: 30px;
+  }
+
   main {
     max-width: 1400px;
-    
+     
     flex-direction: row;
     margin: 0 40px 20px 200px;
     border-right: 0;
-    & picture {
-      width: 500px;
-      height: 100%;
-      right: 0;
-      
-    }     
-    h2 {
-      text-align: left;
-      font-size: 3em;
-      padding-left: 0;
-      width: 400px;
-      margin: 100px 0 50px;
-    }
-    p {
-      text-align: left;
-      font-size: 1em;
-      width: 440px;
-      font-weight: bold;
-      margin: 0 0 50px;
-    }
-    & button {
-      margin: 0 0 100px 0;
-    }
-    & .SWS-container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      position: relative;
-      padding: 10px 16px;
-      width: 100%;
-      height: 10px;
-    }
-    & .SWS-image {
-      width: 100%; /* Adjust this percentage as needed */
-      max-width: 200px; /* Set a max-width to prevent images from growing too large */
-      /* Maintain aspect ratio */
-    }
+  }
+
+  main picture {
+    width: 500px;
+    height: 100%;
+    right: 0;
+    
+  }
+
+  main h2 {
+    text-align: left;
+    font-size: 3em;
+    padding-left: 0;
+    width: 400px;
+    margin: 100px 0 50px;
+  }
+
+  main p {
+    text-align: left;
+    font-size: 1em;
+    width: 440px;
+    font-weight: bold;
+    margin: 0 0 50px;
+  }
+
+  main button {
+    margin: 0 0 100px 0;
+  }
+
+  main .SWS-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px 16px;
+    width: 100%;
+    height: 10px;
+  }
+
+  main .SWS-image {
+    width: 100%;
+    max-width: 200px;
   }
 }
